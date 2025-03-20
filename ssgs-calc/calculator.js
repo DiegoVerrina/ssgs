@@ -12,6 +12,7 @@ const greetings = [
   "Torna presto!",
   "Arrivederci!",
   "A presto!",
+  "ciao"
 
 ];
 
