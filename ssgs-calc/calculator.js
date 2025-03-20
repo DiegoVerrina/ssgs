@@ -9,7 +9,8 @@ const greetings = [
   "Grazie per aver usato il calcolatore!", 
   "Alla prossima!", 
   "Buona giornata!", 
-  "Torna presto!"
+  "Torna presto!",
+  "Arrivederci!"
 ];
 
 console.log("Benvenuto nella calcolatrice CLI!");
