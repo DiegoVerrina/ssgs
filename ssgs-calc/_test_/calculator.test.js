@@ -6,7 +6,7 @@ test("Addizione corretta: 2 + 2 = 4", () => {
     expect(add(2, 2)).toBe(4); // Test che dovrebbe passare
   });
   
-  test("Test errato: 3 + 5 = 7", () => {
+  test.skip("Test errato: 3 + 5 = 7", () => {
     expect(add(3, 5)).toBe(7); // Test che non passa (perché il risultato è 8)
   });
 
