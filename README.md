@@ -1,0 +1,3 @@
+Laboratorio ssgs
+
+bbiamo implementato una semplice calcolatrice in js e creato un workflow contenente una pipeline automatizzata di test che viene eseguita ad ogni push
