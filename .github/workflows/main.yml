@@ -22,11 +22,5 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
-    - name: Run tests with coverage
-      run: npm run test -- --coverage
-
-    - name: Installa html-to-text
-      run: npm install -g html-to-text
-
-    - name: Mostra il report di coverage
-      run: html-to-text ./coverage/lcov-report/index.html || echo "Il file di coverage HTML non esiste"
+    - name: Mostra il report di coverage (testuale)
+      run: npm test -- --coverage
