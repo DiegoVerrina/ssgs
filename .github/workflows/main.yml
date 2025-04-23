@@ -20,7 +20,7 @@ jobs:
         node-version: '16' # Usa la versione che preferisci
 
     - name: Install dependencies
-      run: npm install
+      run: npm ci
 
     - name: Run tests with coverage
       run: npm run test -- --coverage
