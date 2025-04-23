@@ -25,10 +25,5 @@ jobs:
     - name: Run tests with coverage
       run: npm run test -- --coverage
 
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v3
-      with:
-        token: ${{ secrets.CODECOV_TOKEN }} # Assicurati di configurare il token segreto nel repository
-        files: ./coverage/*.json
-        flags: unittests
-        name: codecov-umbrella
+    - name: Mostra il report di coverage
+      run: cat ./coverage/lcov-report/index.html || echo "Il file di coverage non esiste"
