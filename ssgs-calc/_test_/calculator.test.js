@@ -20,4 +20,8 @@ describe("Funzioni matematiche di base", () => {
   test("Divisione per zero lancia un errore", () => {
     expect(() => divide(10, 0)).toThrow("Errore: Divisione per zero non consentita.");
   });
+
+  test("Addizione con numeri negativi: -2 + -3 = -5", () => {
+    expect(add(-2, -3)).toBe(-5);
+  });
 });
