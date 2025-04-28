@@ -1,4 +1,4 @@
-const { add, subtract, multiply, divide } = require("../calculator");
+const { add, subtract, multiply, divide, power } = require("../calculator");
 
 describe("Funzioni matematiche di base", () => {
   test("Addizione: 2 + 3 = 5", () => {
@@ -23,5 +23,27 @@ describe("Funzioni matematiche di base", () => {
 
   test("Addizione con numeri negativi: -2 + -3 = -5", () => {
     expect(add(-2, -3)).toBe(-5);
+  });
+});
+
+describe("Funzione power", () => {
+  test("Potenza: 2^3 = 8", () => {
+    expect(power(2, 3)).toBe(8);
+  });
+
+  test("Potenza con esponente zero: 5^0 = 1", () => {
+    expect(power(5, 0)).toBe(1);
+  });
+
+  test("Potenza con base zero: 0^5 = 0", () => {
+    expect(power(0, 5)).toBe(0);
+  });
+
+  test("Potenza con esponente negativo: 2^-2 = 0.25", () => {
+    expect(power(2, -2)).toBe(0.25);
+  });
+
+  test("Potenza con base negativa: (-2)^3 = -8", () => {
+    expect(power(-2, 3)).toBe(-8);
   });
 });
