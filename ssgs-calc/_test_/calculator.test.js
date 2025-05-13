@@ -46,4 +46,5 @@ describe("Funzione power", () => {
   test("Potenza con base negativa: (-2)^3 = -8", () => {
     expect(power(-2, 3)).toBe(-8);
   });
+  //ciao//
 });
